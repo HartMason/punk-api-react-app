@@ -12,7 +12,7 @@ class App extends Component {
     };
   }
 
-  handleLike() {
+  handleLike() {                      //Work on Button first thing tomorrow
     console.log("LIKED!!!!!!!!!!");
     return alert("is Liked");
   }
@@ -28,14 +28,14 @@ class App extends Component {
     });
   }
 
-  render() {
+  render() {                            
     return (
       <div className="App">
         <header className="App-header">
           <ol>
             {this.state.arrayOfBeer.map((beer, index) => (
               <BeerCard
-                key={index} //passing props or display a value...???? Template literalls 
+                key={index} //passing props or display a value...???? Template literalls // displa
                 name={beer.name}
                 image_url={beer.image_url}
               />
