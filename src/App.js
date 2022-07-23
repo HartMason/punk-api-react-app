@@ -4,6 +4,7 @@ import axios from "axios";
 import { render } from "@testing-library/react";
 import BeerCard from "./BeerCard";
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -12,10 +13,10 @@ class App extends Component {
     };
   }
 
-  handleLike() {                      //Work on Button first thing tomorrow
-    console.log("LIKED!!!!!!!!!!");
-    return alert("is Liked");
-  }
+  // handleLike() {                      //Work on Button first thing tomorrow
+  //   console.log("LIKED!!!!!!!!!!");
+  //   return alert("is Liked");
+  // }
 
   componentDidMount() {
     axios.get("https://api.punkapi.com/v2/beers").then((res) => {

@@ -1,0 +1,21 @@
+.parentContainer {
+    display: flex;
+    flex-direction: row;
+    /* flex: 1; */
+  
+}
+
+.beerContainer {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+}
+
+.beerName {
+    font-size: 30px;
+}
+
+.beerImage {
+    height: 400px;
+    width: auto;
+}

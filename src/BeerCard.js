@@ -1,22 +1,22 @@
-import React from 'react'
+import React from "react";
+import BeerCard from "./BeerCard.css";
 
+const beerCard = (props) => {
+  // handleLike = () => {
+  //     console.log("LIKED!!!!!!!!!!");
+  //     return alert('is Liked')
+  //   };
 
-const BeerCard = (props) => {
-
-    handleLike = () => {
-        console.log("LIKED!!!!!!!!!!");
-        return alert('is Liked')
-      };
-    
   return (
-    <div>
+    <div className="parentContainer">
+      <div className="beerContainer">
+        <li className="beerName">{props.name}</li>
+        <img className="beerImage" src={props.image_url}></img>
         <h1>{props.tagline}</h1>
-        <li>{props.name}</li>
-        <img src={props.image_url}></img>
-        <button onClick={handleLike}> {props.likeCount} Like</button>
-        
+        {/* <button onClick={handleLike}> {props.likeCount} Like</button> */}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default BeerCard
+export default beerCard;
