@@ -1,5 +1,5 @@
 import React from "react";
-import BeerCard from "./BeerCard.css";
+import "./beerCard.css";
 
 const beerCard = (props) => {
 
@@ -8,8 +8,10 @@ const beerCard = (props) => {
   return (
     
       <div className="beerContainer">
-        <li className="beerName">{props.name}</li>
-        <img className="beerImage" src={props.image_url}></img>
+        <ul className="beerName">{props.name}</ul>
+        <ul className="flex">
+        <img className="beerImage" src={props.image_url} alt='beerImage'></img>
+        </ul>
         <h1>{props.tagline}</h1>
         {/* <button onClick={handleLike}> {props.likeCount} Like</button> */}
       </div>

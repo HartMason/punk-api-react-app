@@ -1,8 +1,8 @@
 import { Component } from "react";
-import "./App.css";
 import axios from "axios";
-import { render } from "@testing-library/react";
+import { render } from "@testing-library/react"; //is this necessary
 import BeerCard from "./BeerCard";
+import "./app.css";
 
 class App extends Component {
   constructor(props) {
