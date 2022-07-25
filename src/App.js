@@ -25,9 +25,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <ol>
+      <div>
+        <header className="appHeader">
+          <ol className="beerList">
             {this.state.arrayOfBeer.map((beer, index) => (
               <BeerCard
                 key={index} //passing props or display a value...???? Template literalls // display

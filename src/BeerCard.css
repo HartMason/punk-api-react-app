@@ -1,13 +1,12 @@
 .beerContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .beerName {
   font-size: 30px;
-  
 }
 
 .beerImage {
